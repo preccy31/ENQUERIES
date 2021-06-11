@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<title>ENQUIRIES FORM</title>
+	<link rel="stylesheet" type="text/css" href="styling.css">
+</head>
+<style>
+body{
+	background-color: lightgreen;
+}
+</style>
+<body>
+	
+<div class="contact-box"> 
+
+
+
+
+	<h3 style="text-align: center; font-family: 'Verdana'; font-size: 30px; text-transform: uppercase;">ENQUIRIES FORM</h3>
+
+	<form>
+		
+		<label for="firstname" style="font-family: Verdana,sans-serif;font-size:16px; letter-spacing: 2px;">First Name:</label>
+		<input type="text" id="firstname" placeholder="eg: Preccy" name="firstname" maxlength="15" style="font-family: Verdana,sans-serif;width: 400px; height: 40px; margin-top: 20px; padding-left: 10px; padding-right: 10px; border: 1px solid #777; border-radius: 14px; outline: none; font-size:16px; letter-spacing: 2px;"><br><br>
+
+		<label for="lastname" style="font-family: Verdana,sans-serif;font-size:16px; letter-spacing: 2px;">Last Name:</label>
+		<input type="text" id="lastname" placeholder="eg: Bond" name="lastname" maxlength="25" style="font-family: Verdana,sans-serif;font-size:16px;width: 400px; height: 40px; margin-top: 20px; padding-left: 10px; padding-right: 10px; border: 1px solid #777; border-radius: 14px; outline: none; letter-spacing: 2px;"><br><br>
+
+		<label for="phone" style="font-family: Verdana,sans-serif;font-size:16px; letter-spacing: 2px;">Phone number:</label>
+		<input type= "tel" id= "phone" placeholder="eg: 077-887-7486" name ="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="13" style="font-family: Verdana,sans-serif;width: 370px; height: 40px; margin-top: 20px; padding-left: 10px; padding-right: 10px; border: 1px solid #777; border-radius: 14px; outline: none;font-size:16px; letter-spacing: 2px;"><br><br>
+
+		<label for="email" style="font-family: Verdana,sans-serif;font-size:16px; letter-spacing: 2px;"> Email Address:</label>
+		<input type="email" id = "email" placeholder="eg: preccybond@yahoo.com" name="email" style="font-family: Verdana,sans-serif;width: 370px; height: 40px; margin-top: 20px; padding-left: 10px; padding-right: 10px; border: 1px solid #777; border-radius: 14px; outline: none;font-size:16px; letter-spacing: 2px;"><br><br>
+
+		<label for="query" style="font-family: Verdana,sans-serif;font-size:16px; letter-spacing: 2px;"> Type in Query: </label>
+		<textarea id = "query" placeholder="ex: your query" name="query" style="font-family: Verdana,sans-serif;font-size:16px; height: 150px; width: 400px; padding-top: 10px;letter-spacing: 2px;"> </textarea>
+		
+		
+		<input type="submit" name="submit" value="Submit" onclick="myfun()" style="font-family: Verdana,sans-serif;border-radius: 20px; color: #fff; margin-top: 18px; padding: 10px; background-color: #47c35a; font-size: 12px;border: none; cursor: pointer;width: 200px; height: 40px; margin-top: 20px; padding-left: 10px; padding-right: 10px; border: 1px solid #777; border-radius: 14px; outline: none;font-size:16px; letter-spacing: 2px;">
+
+		<input type="reset" name="reset" value="Reset" style="font-family: Verdana,sans-serif;border-radius: 20px; color: #fff; margin-top: 18px; padding: 10px; background-color: #47c35a; font-size: 12px;border: none; cursor: pointer;width: 200px; height: 40px; margin-top: 20px; padding-left: 10px; padding-right: 10px; border: 1px solid #777; border-radius: 14px; outline: none;font-size:16px; letter-spacing: 2px;">
+
+		<br>
+	</form>	
+    </div>
+	<script>
+		function myfun(){
+
+			var x1=document.getElementById('firstname').value;
+			var x2=document.getElementById('lastname').value;
+			var x3=document.getElementById('phone').value;
+			var x4=document.getElementById('email').value;
+			var x5=document.getElementById('query').value;
+
+			alert("firstname : "+x1+"\n lastname : "+x2+"\n phone :"+x3+"\n email : "+x4+"\n query : "+x5);
+
+		}
+		
+
+
+	</script>
+
+</body>
+</html>
